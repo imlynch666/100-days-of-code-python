@@ -1,8 +1,8 @@
 #test pull on github
-print('a')
+print("Hello, what's yor name: ")
 a = input()
 
-print('b')
+print("What's your pet name: ")
 b = input()
 
-print(a, b)
+print("Your band name is: " + a + " " + b)
