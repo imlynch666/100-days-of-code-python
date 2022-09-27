@@ -1,6 +1,8 @@
 #test pull on github
+print('a')
+a = input()
 
-a = input(print('input 1'))
-b = input(print('input 2'))
+print('b')
+b = input()
 
 print(a, b)
