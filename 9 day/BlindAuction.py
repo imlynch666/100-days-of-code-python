@@ -52,6 +52,16 @@ biddingFinished = False
 
 def script_auction(all_data_s):
 
+    highest_bid = 0
+    biggest_name = ''
+    for name_s in all_data_s:
+        big_amount = all_data_s[name_s]
+        if big_amount > highest_bid:
+            highest_bid = big_amount
+            biggest_name  = name_s
+    print(f'The winner is {biggest_name} with price {highest_bid}')
+
+
 
 
 
@@ -69,7 +79,7 @@ while not biddingFinished:
         biddingFinished = True
         script_auction(all_data)
     elif choice == 'yes':
-        print(100*'*')
+        print(100*'\n')
 
 
 
